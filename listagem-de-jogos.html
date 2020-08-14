@@ -1,0 +1,181 @@
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+        
+<style>
+
+    .listagem_principal{
+        padding: 2%;
+        border: 2px solid #002752;
+        margin: 0.5em;
+        background: #eee;
+    }
+
+    #vai-dar-certo{
+
+    }
+    .jogo{
+        font-size: 1em;
+        margin: 10px 0 0 0;
+        cursor: pointer;
+        max-width: 75px;
+        //border: 2px dashed #001226;
+    }
+    .versoes{
+        //background: #000;
+        color: #001226;
+        font-weight: bold;
+        display: none;
+    }
+    .specifics{
+        display: flex;
+    }
+
+</style>
+
+<div class="listagem_principal">
+            
+            <div class="titulo_pag_inicial">
+                <h1>Jogos</h1>                
+            </div>
+            
+            <ul id="vai-dar-certo">
+                <li class="jogo">Rage
+                    <ul class="versoes"><b>versions:</b>
+                        <li>PS3</li>
+                        <li>Xbox 360</li>
+                    </ul>
+                </li>
+                <li class="jogo">Singularity
+                    <ul class="versoes"><b>versions:</b>
+                        <li>PS3</li>
+                        <li>Xbox 360</li>
+                    </ul>
+                </li>
+                <li class="jogo">GTA V
+                    <ul class="versoes"><b>versions:</b>
+                        <li>PS3
+                            <ul>
+                                <li class="specifics">Glitched? Yes</li>
+                            </ul>
+                        </li>
+                        <li>Xbox 360
+                            <ul>
+                                <li class="specifics">Glitched? Maybe.</li>
+                            </ul>
+                        </li>
+                        <li>Xbox One</li>
+                        <li>PS4</li>
+                    </ul>
+                </li>
+                <li class="jogo">Fallout 3
+                    <ul class="versoes"><b>versions:</b>
+                        <!-- atributo *target*: SERVE PARA ABRIR O LINK NUMA OUTRA ABA.-->
+                        <li><a href="https://www.playstationtrophies.org/" target="_blank" title="Playstation trophies">PS3</a>
+                            <ul>
+                                <li class="specifics">Glitched? Extremely glitched(and freezes your console every once in a while too).</li>
+                            </ul>
+                        </li>
+                        <li>Xbox 360
+                            <ul>
+                                <li class="specifics">Glitched? Maybe.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="jogo">Castle Crashers
+                    <ul class="versoes"><b>versions:</b>
+                        <li>PS3
+                            <ul>
+                                <li class="specifics">Glitched? On multiplayer, yes. Very much.</li>
+                            </ul>
+                        </li>
+                        <li>Xbox 360
+                            <ul>
+                                <li class="specifics">Glitched? A bit, yes.</li>
+                            </ul>
+                        </li>
+                        <li>PS4</li>
+                    </ul>
+                </li>
+                <li class="jogo">Scott Pilgrim vs. the World
+                    <ul class="versoes"><b>versions:</b>
+                        <li>PS3
+                            <ul>
+                                <li>Glitched? Super glitched on multiplayer.</li>
+                            </ul>
+                        </li>
+                        <li>Xbox 360
+                            <ul>
+                                <li>Glitched? Maybe.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="jogo">Motorstorm
+                    <ul class="versoes">
+                        <b>versions:</b>
+                        <li> (PS3 exclusive.) 
+                            <ul>
+                                <li>Glitched? It's not really GLITCHED. It's rather super laggy.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="jogo"> Bioshock
+                    <ul start="1" class="versoes">
+                        <b>versions:</b>
+                        <li>Xbox 360
+                            <ul>
+                                <li class="specifics">Glitched? No.</li>
+                            </ul>
+                        </li>
+                        <li>PS3
+                            <ul class="specifics">Glitched? Not much. It flows out well.</ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <select>
+            <optgroup label='jogos-exclusivos-ps3'>
+                <option>Motorstorm</option>
+                <option>Twisted Metal</option>
+                <option>All Stars Battle Royale</option>
+                <option>God of War Ascension</option>
+            </optgroup>
+            
+            <optgroup label="exclusivos-de-xbox">
+                <option>Dead Rising 3</option>
+                <option>Gears of War</option>
+                <option>Halo</option>
+            </optgroup>
+        </select>
+         <form>
+
+            <fieldset>
+                <legend>Campos do formulário</legend>
+                escolha uma cor: <input type="color">
+                data: <input type="date">
+                hora: <input type="time">
+                mês: <input type="month">
+                semana: <input type="week">
+                
+                <p>Quais jogos ainda faltam platinar:</p>
+                <label>Motorstorm Apocalypse</label>
+                <input type="checkbox" checked disabled>
+                
+                <label>GTA IV</label>
+                <input type="checkbox" checked disabled>
+                
+                <label>Fallout 3</label>
+                <input type="checkbox">
+                
+                <label>GTA V</label>
+                <input type="checkbox">
+                
+                <label>Rage</label>
+                <input type="checkbox">
+                
+                <button type="submit">Enviar!</button>
+                <button type='reset'>Limpar campos</button>
+            </fieldset>
+        </form>
